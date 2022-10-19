@@ -1,0 +1,105 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+}
+.fontInter {
+  font-family: "Inter", sans-serif, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.font-Header {
+  font-family: "Bungee Hairline", cursive;
+}
+.font-Body {
+  font-family: "Goldman", cursive;
+}
+
+@font-face {
+  font-family: "Bruno Ace SC";
+  src: url("./Font/BrunoAceSC-Regular.woff2") format("woff2"),
+    url("./Font/BrunoAceSC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-HeaderSection {
+  font-family: "Bruno Ace SC";
+}
+
+.purpleGradient {
+  background: linear-gradient(92.44deg, #694892 47.96%, #574892 95.15%);
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: #6948924c;
+
+  transform-origin: 0%;
+  border-radius: 5rempx;
+  z-index: 100;
+}
+
+@media all and (max-width: 430px) {
+  .progress-bar {
+    position: fixed;
+    top: 4.6rem;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #6948924c;
+    transform-origin: 0%;
+    border-radius: 5rempx;
+    z-index: 100;
+  }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
